@@ -11,7 +11,6 @@
   --border-radius: 10px;
 }
 
-/* BASIC FORMATTING */
 html {
   box-sizing: border-box;
 }
@@ -84,11 +83,6 @@ h2 {
   padding-bottom: 0rem;
   padding-top: 2rem;
 }
-/* .flex {
-  display: flex;
-  flex-flow: wrap;
-  justify-content: center;
-} */
 
 .parent {
   display: grid;
@@ -99,7 +93,7 @@ h2 {
   padding: 2rem;
   padding-top: 1rem;
 }
-@media (max-width: 800px) {
+@media (max-width: 1000px) {
   .parent {
     grid-template-columns: 1fr 1fr;
   }
