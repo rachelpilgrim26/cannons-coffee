@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>latte</title>
+    <title>contact</title>
     <link rel="stylesheet" href="css/style.css" />
   </head>
 
@@ -28,13 +28,57 @@
             <li>
               <a href="contact.html" target="_blank">contact</a>
             </li>
+            <li>
+              <a href="cart.html" target="_blank"> Login </a>
+            </li>
           </ul>
         </nav>
       </header>
 
       <main>
-        <h2>Contact Cannons Coffee</h2>
-        <p>Coming soon!</p>
+        <form id="coffeeForm">
+          <label for="name"> Name: </label>
+          <input type="text" name="name" required />
+          <br /><br />
+
+          <label for="email"> Email: </label>
+          <input type="email" name="email" required />
+          <br /><br />
+
+          <label for="phone"> Phone Number: </label>
+          <input type="tel" name="phone" />
+          <br /><br />
+          <label for="comments"> Comments: </label>
+          <textarea
+            name="comments"
+            id="comments"
+            rows="10"
+            cols="50"
+          ></textarea>
+          <br />
+          <label>
+            Favorite Coffee Flavor:
+            <select name="flavor" required>
+              <option value=""></option>
+              <option value="Vanilla">Vanilla</option>
+              <option value="Mocha">Mocha</option>
+              <option value="Hazelnut">Hazelnut</option>
+            </select>
+          </label>
+          <br />
+
+          <label> I'm interested in buying coffee </label>
+          <input type="radio" name="interest" value="buying coffee" required />
+          <br /><br />
+          <label> I'm seeking employment </label><br />
+
+          <input type="radio" name="interest" value="seeking employment" />
+
+          <button class="contact" type="submit">Submit</button>
+        </form>
+        <div class="thankyou"></div>
+        <!-- <h2>Contact Cannons Coffee</h2>
+        <p>Coming soon!</p> -->
       </main>
 
       <footer>

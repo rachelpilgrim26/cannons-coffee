@@ -46,6 +46,7 @@ main {
   border-bottom: 5px solid var(--sunglow);
   border-top: 5px solid var(--sunglow);
   margin: 0;
+  background-color: #ffffff;
 }
 
 .container {
@@ -180,4 +181,48 @@ footer {
 }
 .card img {
   border-radius: var(--border-radius);
+}
+input[type="radio"],
+[type="checkbox"] {
+  width: auto;
+  margin-right: 1rem;
+  transform: scale(2);
+}
+.contact {
+  margin-top: 2rem;
+  background-color: #063270;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact:hover {
+  background-color: #209d5c;
+}
+form {
+  background-color: #fff;
+  border-radius: 15px;
+  padding: 2rem;
+  max-width: 600px;
+  margin: 0 auto;
+  font-size: 1rem;
+}
+
+label {
+  display: block;
+  margin-top: 1rem;
+  font-weight: bold;
+}
+
+input,
+select,
+.contact {
+  width: 100%;
+  padding: 0.5rem;
+  margin-top: 0.3rem;
+  border-radius: 8px;
+  border: 1px solid #cccccc;
+  font-size: 0.5rem;
+  box-sizing: border-box;
+  font-size: larger;
 }
